@@ -1,17 +1,67 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-item class="padding">
+  <h1 style="text-align: center;"><strong> Player Profile </strong></h1>
+</ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-item>
+  <ion-button (click)="addProfile()">+Add</ion-button>
+</ion-item>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <ion-card style="border-radius: 10px;">
+      <ion-item>
+        <ion-label>Tom Jerry</ion-label>
+      </ion-item>
+  </ion-card>
+  <ion-card style="border-radius: 10px;">
+    <ion-item>
+      <ion-label>Ana Vuli</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card style="border-radius: 10px;">
+    <ion-item>
+      <ion-label>Kieran Varea</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card style="border-radius: 10px;">
+    <ion-item>
+      <ion-label>Solo Tuilagivou</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card style="border-radius: 10px;">
+    <ion-item>
+      <ion-label>Emosi Bainimarama</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card style="border-radius: 10px;">
+    <ion-item>
+      <ion-label>Ken Katafono</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card style="border-radius: 10px;">
+    <ion-item>
+      <ion-label>Shauna Katafono</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card style="border-radius: 10px;">
+    <ion-item>
+      <ion-label>Krishant Pal</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card style="border-radius: 10px;">
+    <ion-item>
+      <ion-label>SpongeBob</ion-label>
+    </ion-item>
+  </ion-card>  
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom" class="tab-bar">
+    <ion-tab-button tab="tab2">
+      <ion-icon name="home-outline" [routerLink]="['/tab2']"></ion-icon>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="tab3" [routerLink]="['/tab3']">
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

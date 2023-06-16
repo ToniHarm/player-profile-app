@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Create Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="light" class="custom-card">
+    <div class="img-wrapper">
+      <img src="./assets/avatar.jpeg" />
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="camera-outline" color="medium">
+        </ion-icon>
+      </ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card style="height:300px">
+    <ion-card-content>
+      <ion-item>
+        <ion-input label="Name" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Age" type="text"></ion-input>
+        <ion-input label="Gender" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Address" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Height (ft)"type="text"></ion-input>
+        <ion-input label="Hand" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Partner" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="WR" type="text"></ion-input>
+        <ion-input label="CWR" type="text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
