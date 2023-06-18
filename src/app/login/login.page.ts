@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
-import { Tab2Page } from '../tab2/tab2.page';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,10 +8,17 @@ import { Tab2Page } from '../tab2/tab2.page';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private router: Router) { }
 
   goToTab2(){
-    this.navCtrl.navigateRoot('/tabs/tab2');
+    // Simulating a successful login
+    // You can replace this with your actual login logic
+    const isLoggedIn = true;
+
+    if (isLoggedIn) {
+      // After successful login, navigate to the tabs page
+    this.router.navigate(['/tabs']);
+    }
   }
   ngOnInit() {
   }

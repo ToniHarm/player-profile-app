@@ -1,22 +1,26 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title style="text-align: center;">Create Profile</ion-title>
+  <ion-toolbar class="custom-toolbar">
+    <ion-title>
+      <ion-text class="toolbar-title">Create Profile</ion-text>
+    </ion-title>
+    <div>
+      <button [routerLink]="['/tabs/tab3']">
+        <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
+      </button>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card color="light" class="custom-card">
     <div class="img-wrapper">
-      <img src="./assets/avatar.jpeg" />
+      <img src="./assets/addphoto.jpg" />
       <ion-button color="light">
         <ion-icon slot="icon-only" name="camera-outline" color="medium">
         </ion-icon>
       </ion-button>
     </div>
-  </ion-card>
-
-  <ion-card style="height:300px">
-    <ion-card-content>
+  <ion-card-content>
       <ion-item>
         <ion-input label="Name" type="text"></ion-input>
       </ion-item>
