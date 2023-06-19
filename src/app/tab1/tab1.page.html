@@ -1,8 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-item>
+  <h1><strong> Performance <br> Tracker </strong></h1>
+</ion-item>
 
+<ion-content class="padding">
+  <ion-item>
+    <ion-text slot="end" style="font-family: Inter-SemiBold;">2023</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <img src="./assets/graph.jpg"/>
+  </ion-item>
+  
+  <ion-item>
+    <ion-button [routerLink]="['/add-match']">+Add Match</ion-button>
+  </ion-item>
+
+  <ion-card class="custom-card">
+    <ion-label class="Date"> Monday, 12th June <br> 
+      <span class="Names">Tom Jerry 
+        <span class="Result">Win</span> 
+      </span>
+    </ion-label>
+  </ion-card>
+
+  <ion-card class="custom-card">
+    <ion-label class="Date"> Sunday, 11th June <br> 
+      <span class="Names">Ana Vuli 
+        <span class="Result">Win</span> 
+      </span>
+    </ion-label>
+  </ion-card>
+
+  <ion-card class="custom-card">
+    <ion-label class="Date"> Saturday, 10th June <br> 
+      <span class="Names">SpongeBob
+        <span class="Result">Loss</span> 
+      </span>
+    </ion-label>
+  </ion-card>
+
+  <ion-card class="custom-card">
+    <ion-label class="Date"> Friday, 8th June <br> 
+      <span class="Names">Emosi Bainimarama
+        <span class="Result">Win</span> 
+      </span>
+    </ion-label>
+  </ion-card>
+ 
+</ion-content>

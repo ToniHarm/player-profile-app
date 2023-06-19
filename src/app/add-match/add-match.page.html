@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title>
+      <ion-text class="toolbar-title">Add Match</ion-text>
+    </ion-title>
+    <div>
+      <button [routerLink]="['/tabs/tab1']">
+        <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="padding: 10px;">
+    <br>
+    <ion-label position="floating">Date</ion-label>
+    <ion-input fill="outline" type="text"></ion-input>
+    <br>
+    <ion-label position="floating">Player Name</ion-label>
+    <ion-input fill="outline" type="text"></ion-input>
+    <br>
+    <ion-label position="floating">Opponent Name</ion-label>
+    <ion-input fill="outline" type="text"></ion-input>
+    <br>
+    <ion-label position="floating">Competition</ion-label>
+    <ion-input fill="outline" type="text"></ion-input>
+    <br>
+    <ion-label position="floating">Points</ion-label>
+    <ion-input fill="outline" type="text"></ion-input>
+    <br>
+    <ion-label position="floating">Win/Loss/Draw</ion-label>
+    <ion-input fill="outline" type="text"></ion-input>
+  </ion-card>
+
+  <ion-item class="bottom-button">
+    <ion-button>Cancel</ion-button>
+    <ion-button>Save</ion-button>
+  </ion-item>
+</ion-content>

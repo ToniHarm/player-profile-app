@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
-  }
+  },
+  {
+    path: 'add-match',
+    loadChildren: () => import('../add-match/add-match.module').then( m => m.AddMatchPageModule)
+  },
 ];
 
 @NgModule({

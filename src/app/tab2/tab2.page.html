@@ -1,15 +1,20 @@
 <ion-content class="padding">
   <ion-item>
-    <h1 class="ion-no-margin"><strong> Fiji Badminton </strong></h1>
+    <h1><strong> Fiji <br> Badminton </strong></h1>
+    <button [routerLink]="['/login']">
+      <ion-icon class="log-out-button" name="log-out-outline"></ion-icon>
+    </button>
   </ion-item>
+  
   <ion-card style="background-color:#0B2056;">
     <div class="heading">
       <h3 style="color:rgb(255, 255, 255)" class="padding"> Player Profiles </h3>
     </div>
   </ion-card>
+
   <ion-card>
-    <ion-item>
-      <ion-text> Ana Vuli </ion-text>
+    <ion-item [routerLink]="['/sample']">
+      <ion-text> Tom Jerry </ion-text>
     </ion-item>
     <ion-item>
       <ion-text> Solo Tuilagivou </ion-text>
@@ -18,14 +23,13 @@
       <ion-text> Kieran Varea </ion-text>
     </ion-item>
   </ion-card>
-</ion-content>
 
-<ion-content>
   <ion-card style="background-color:#0B2056;">
     <div class="heading">
       <h3 style="color:rgb(255, 255, 255)" class="padding"> Performance Tracking </h3>
     </div>
   </ion-card>
+  
     <ion-item>
       <img src="./assets/graph.jpg"/>
     </ion-item>

@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title>
+      <ion-text class="toolbar-title">Edit Profile</ion-text>
+    </ion-title>
+    <div>
+      <button [routerLink]="['/tabs/tab1']">
+        <ion-icon name="arrow-back-circle-outline" class="back-button"></ion-icon>
+      </button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="light" class="custom-card">
+    <div class="img-wrapper">
+      <img src="./assets/avatar.jpeg" />
+      <ion-button color="light">
+        <ion-icon slot="icon-only" name="camera-outline" color="medium">
+        </ion-icon>
+      </ion-button>
+    </div>
+
+      <ion-card-content>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input fill="outline" type="text" value="Tom Jerry"></ion-input>
+        <br>
+        <ion-label position="floating">Age</ion-label>
+        <ion-input fill="outline" type="text" value="24"></ion-input>
+        
+        <ion-label position="floating">Gender</ion-label>
+        <ion-input fill="outline" type="text" value="Male"></ion-input>
+        <br>
+        <ion-label position="floating">Address</ion-label>
+        <ion-input fill="outline" type="text" value="Milverton Road, Suva Fiji"></ion-input>
+        <br>
+        <ion-label position="floating">Height (ft)</ion-label>
+        <ion-input fill="outline" type="text" value="6"></ion-input>
+
+        <ion-label position="floating">Hand</ion-label>
+        <ion-input fill="outline" type="text" value="Right"></ion-input>
+        <br>
+        <ion-label position="floating">Partner</ion-label>
+        <ion-input fill="outline" type="text" value="Krishant Pal"></ion-input>
+        <br>
+        <ion-label position="floating">Rank</ion-label>
+        <br>
+        <ion-label position="floating">WR</ion-label>
+        <ion-input fill="outline" type="text" value="190"></ion-input>
+        
+        <ion-label position="floating">CWR</ion-label>
+        <ion-input fill="outline" type="text" value="25"></ion-input>
+      </ion-card-content>
+  </ion-card>
+</ion-content>
