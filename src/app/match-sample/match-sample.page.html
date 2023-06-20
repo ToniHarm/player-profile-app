@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="custom-toolbar">
     <ion-title>
-      <ion-text class="toolbar-title">Add Match</ion-text>
+      <ion-text class="toolbar-title">Update Match</ion-text>
     </ion-title>
     <div>
       <button [routerLink]="['/tabs/tab1']">
@@ -15,24 +15,24 @@
   <ion-card style="padding: 10px;" class="custom-card">
     <ion-card-content>
       <ion-label position="floating">Date</ion-label>
-      <ion-input fill="outline" type="text"></ion-input>
+      <ion-input fill="outline" type="text" value="12/06/2023"></ion-input>
       <br>
       <ion-label position="floating">Player Name</ion-label>
-      <ion-input fill="outline" type="text"></ion-input>
+      <ion-input fill="outline" type="text" value="Tom Jerry"></ion-input>
       <br>
       <ion-label position="floating">Opponent Name</ion-label>
-      <ion-input fill="outline" type="text"></ion-input>
+      <ion-input fill="outline" type="text" value="Thomas Choo"></ion-input>
       <br>
       <ion-label position="floating">Competition</ion-label>
-      <ion-input fill="outline" type="text"></ion-input>
+      <ion-input fill="outline" type="text" value="Commonwealth Games"></ion-input>
       <br>
       <ion-label position="floating">Points</ion-label>
-      <ion-input fill="outline" type="text"></ion-input>
+      <ion-input fill="outline" type="text" value="21-15"></ion-input>
       <br>
       <ion-label position="floating">Win/Loss/Draw</ion-label>
-      <ion-input fill="outline" type="text"></ion-input>
+      <ion-input fill="outline" type="text" value="Win"></ion-input>
     </ion-card-content>
-    
+
     <div class="button-container">
       <ion-button expand="block" class="bottom-button" [routerLink]="['/tabs/tab1']">Cancel</ion-button>
       <ion-button class="bottom-button" [routerLink]="['/tabs/tab1']">Save</ion-button>

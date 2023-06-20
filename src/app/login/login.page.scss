@@ -4,17 +4,26 @@
     align-items: left;
   }
   
-  .input-item {
-    margin-bottom: 16px;
-  }
+.input-item {
+  margin-bottom: 16px;
+  font-family: Montserrat-Semibold !important;
+}
 
-  .forgot-password {
-    text-align: right;
-  }
-  
-  .signup-link {
-    color: blue;
-  }
-  
+.forgot-password {
+  font-family: Montserrat-SemiBold !important;
+  text-align: right;
+}
+
+.signup-link {
+  color: blue;
+}
+
+h1 {
+  font-family: Montserrat-SemiBold !important;
+}
+
+ion-text {
+  font-family: Montserrat-SemiBold !important;
+}
   
   

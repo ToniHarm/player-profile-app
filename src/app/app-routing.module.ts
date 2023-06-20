@@ -23,6 +23,10 @@ const routes: Routes = [
     loadChildren: () => import('./add-match/add-match.module').then( m => m.AddMatchPageModule)
   },
   {
+    path: 'match-sample',
+    loadChildren: () => import('./match-sample/match-sample.module').then( m => m.MatchSamplePageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
@@ -31,7 +35,7 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'login'
   },
- 
+  
   
 
 ];

@@ -24,6 +24,10 @@
   padding: 0;
 }
 
+.custom-card {
+  height: 800px;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -35,18 +39,14 @@ button {
   justify-content: center;
 }
 
-.custom-card {
-  height: 800px;
-}
-
-ion-label {
-  font-family: Inter-SemiBold !important;
-  color:black;
-}
-
 .bottom-button {
   border-radius: 20px;
   background-color: #3051FF;
   color: white;
   margin: 0 10px;
+}
+
+ion-label {
+    font-family: Inter-SemiBold !important;
+    color: black;
 }

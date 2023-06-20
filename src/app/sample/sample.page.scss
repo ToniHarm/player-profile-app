@@ -8,6 +8,7 @@
     align-items: center;
     text-align: center;
     margin-top: 25px;
+    font-family: Inter-Bold !important;
   }
   
   .back-button {
@@ -74,5 +75,21 @@
         height: 18px;
       }
     }
+  }
+
+  ion-label {
+    font-family: Inter-SemiBold !important;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bottom-button {
+    border-radius: 20px;
+    background-color: #3051FF;
+    color: white;
+    margin: 0 10px;
   }
   
